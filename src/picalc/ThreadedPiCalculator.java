@@ -38,6 +38,7 @@ public class ThreadedPiCalculator {
 		
 		this.startTime = System.currentTimeMillis();
 		
+		// spawning for each iteration a new distinct thread
 		for (int i = 0; i < this.rounds; i++) {
 			ct = new CalculationThread(currentDenominator, sign, this.results, this.semaphore);
 			Thread t = new Thread(ct);
@@ -64,6 +65,7 @@ public class ThreadedPiCalculator {
 			}
 		}
 		
+		// count total sum
 		BigDecimal sum = new BigDecimal(0);
 		for (BigDecimal bd : this.results) {
 			sum = sum.add(bd);
