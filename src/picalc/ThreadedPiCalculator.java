@@ -16,7 +16,8 @@ public class ThreadedPiCalculator {
 	
 	long startTime;					// calculation start time
 	long endTime;					// calculation end time
-		
+
+	
 	public static void main(String[] args) {
 		ThreadedPiCalculator instance = new ThreadedPiCalculator();
 		
@@ -68,7 +69,7 @@ public class ThreadedPiCalculator {
 			sum = sum.add(bd);
 		}
 		
-		System.out.println("Ground Truth: " + "3.1415926535897932384626433832795028841" + "\nOur Result:   " + sum.toPlainString() + "\nTime used: " + (this.endTime - this.startTime) + " ms\nRounds used: " + this.rounds);
+		System.out.println("Ground Truth:\t" + "3.1415926535897932384626433832795028841" + "\nOur Result:\t" + sum.toPlainString() + "\nTime used:\t" + (this.endTime - this.startTime) + " ms\nRounds used:\t" + this.rounds);
 	}
 	
 }
