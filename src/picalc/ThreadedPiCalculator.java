@@ -5,6 +5,17 @@ import java.util.ArrayList;
 import java.util.Vector;
 import java.util.concurrent.Semaphore;
 
+/**
+ * ThreadedPiCalculator
+ * November 2017
+ * 
+ * 
+ * 
+ * @author Pascal Gadient (gadient@inf.unibe.ch) 
+ * 
+ * SCG University of Bern, Concurrency Course
+ * 
+ */
 public class ThreadedPiCalculator {
 
 	int concurrentThreads = 2;		// the amount of threads that are used to approximate Pi
